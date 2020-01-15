@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
+:root {
+    font-family: 'Gelasio', serif;
+    --main-color: black;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .logo {
+    font-family: 'Gelasio', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid var(--main-color);
+}
+
+main .product-list .product-card img {
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu {
+        flex: 1;
+}
+
+@media (min-width: 500px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1f;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .product-list {
+       grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+@media (min-width: 980px) {
+    .product-list {
+       grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+header .banner {
+    background-image: url(../img/cybertrack.jpg);
+    background-position: center;
+    background-size: cober;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+header .banner h1 {
+    font-size: 5rem;
+    font-family: 'Gelasio', serif;
+
+}
+
+.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid rgb(255, 0, 0);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255, 0, 0);
+
+}
+
+.product-card .buttons {
+    display: flex;
+    justify-content: space-around;
+}
